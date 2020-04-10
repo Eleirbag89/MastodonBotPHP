@@ -1,0 +1,19 @@
+{
+    "name": "eleirbag89/Mastodonbotphp",
+    "description": "A very simple PHP Mastodon API for sending statuses",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Gabriele Grillo",
+            "email": "gabry.grillo@alice.it"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "alpha",
+    "require": {
+        "php": ">=5.0"
+    },
+    "autoload": {
+        "files": ["Mastodon.php"]
+    }
+}
