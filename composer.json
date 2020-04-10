@@ -1,5 +1,5 @@
 {
-    "name": "eleirbag89/Mastodonbotphp",
+    "name": "eleirbag89/mastodonbotphp",
     "description": "A very simple PHP Mastodon API for sending statuses",
     "type": "library",
     "authors": [
