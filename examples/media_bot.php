@@ -16,7 +16,7 @@
 
     $response = $mastodon->uploadMedia($body);
 
-    $file_id = $response->id;
+    $file_id = $response['id'];
 
     $statusText = 'This is a status';
 
