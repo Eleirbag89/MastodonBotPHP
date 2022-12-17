@@ -4,7 +4,7 @@
 
 [![Total Downloads](https://poser.pugx.org/eleirbag89/mastodonbotphp/downloads)](https://packagist.org/packages/eleirbag89/mastodonbotphp)
 [![License](https://poser.pugx.org/eleirbag89/mastodonbotphp/license)](https://packagist.org/packages/eleirbag89/mastodonbotphp)
-[![StyleCI](https://styleci.io/repos/254720352/shield?branch=master)](https://styleci.io/repos/38492095)
+[![StyleCI](https://styleci.io/repos/254720352/shield?branch=master)](https://styleci.io/repos/254720352)
 
 A very simple PHP Mastodon API for sending statuses
 
