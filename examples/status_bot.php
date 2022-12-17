@@ -8,15 +8,14 @@ $privacy = 'private'; // "Direct" means sending message as a private message. Th
 $language = 'en'; // en for English, zh for Chinese, de for German etc.
 $statusText = 'This is a status';
 
-$statusData = array(
-'status'      => $statusText,
-'privacy'     => $privacy,
-'language'    => $language
-);
+$statusData = [
+    'status'      => $statusText,
+    'privacy'     => $privacy,
+    'language'    => $language,
+];
 
 $mastodon = new MastodonAPI($token, $baseURL);
 $result = $mastodon->postStatus($statusData);
 
 // Activate the next line if you want to print the result of the query
 //var_dump($result);
-?>
