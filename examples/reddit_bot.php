@@ -11,7 +11,7 @@
     $tagline = ' check out on ';
 
     if (!($jsonTxt = file_get_contents($feed_url))) {
-        die('Error loading the feed url');
+        exit('Error loading the feed url');
     }
 
     $json = json_decode($jsonTxt, true);
@@ -38,7 +38,7 @@
 
             array_push($statuses, $post);
             if (!$first_article) {
-                $myfile = fopen($file, 'w') or die('Unable to open file!');
+                $myfile = fopen($file, 'w') or exit('Unable to open file!');
                 fwrite($myfile, $ts);
                 fclose($myfile);
                 $first_article = true;

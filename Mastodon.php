@@ -25,7 +25,7 @@
         {
             $headers = [
                 'Authorization: Bearer '.$this->token,
-                'Content-Type: multipart/form-data'
+                'Content-Type: multipart/form-data',
             ];
 
             $ch = curl_init();
