@@ -37,7 +37,7 @@
             $reply = curl_exec($ch);
 
             if (!$reply) {
-                return json_encode(['ok'=>false, 'curl_error_code' => curl_errno($ch_status), 'curl_error' => curl_error(ch_status)]);
+                return json_encode(['ok'=>false, 'curl_error_code' => curl_errno($ch), 'curl_error' => curl_error($ch)]);
             }
             curl_close($ch);
 
