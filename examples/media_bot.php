@@ -4,8 +4,8 @@
 
     $token = 'XXXXX'; // Token of your Mastodon welcome bot account
     $base_url = 'https://botsin.space'; // URL of your instance (Do not include '/' at the end.)
-    $visibility = 'private'; // "Direct" means sending welcome message as a private message. The four tiers of visibility for toots are Public , Unlisted, Private, and Direct (default)
-    $language = 'en'; // en for English, zh for Chinese, etc.
+    $privacy = 'private'; // "direct" means sending welcome message as a private message. The four tiers of visibility for toots are public, unlisted, private, and direct (default)
+    $language = 'en'; // en for English, zh for Chinese, de for German etc.
 
     $mastodon = new MastodonAPI($token, $base_url);
 
@@ -20,11 +20,11 @@
 
     $statusText = 'This is a status';
 
-    $status_data = [
+    $status_data = array(
         'status'      => $statusText,
-        'visibility'  => $visibility,
+        'privacy'     => $privacy,
         'language'    => $language,
-        'media_ids[]' => $file_id,
-    ];
+        'media_ids[]' => $file_id
+    );
 
     $mastodon->postStatus($status_data);
